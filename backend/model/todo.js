@@ -4,7 +4,7 @@ const mongooes =  require("mongoose");
 const todoShema = new mongooes.Schema({
     name:{ type: String, required: true, minlength: 4, maxlength: 200 },
     author: {type: String, minlength: 3, maxlength: 30},
-    uid: String,
+    _id: String,
     isComplete: Boolean,
     date: {type: Date, default: new Date()}
 })
